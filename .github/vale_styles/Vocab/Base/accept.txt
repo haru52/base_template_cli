@@ -1,5 +1,7 @@
 actionlint
+Base Template CLI
 boilerplate
+CLI
 Commitizen
 commitlint
 conventionalcommits
@@ -10,4 +12,6 @@ npm
 repo
 reviewdog
 Secretlint
+UNIX
+WTFPL
 yamllint
