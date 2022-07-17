@@ -8,3 +8,6 @@
 
 # 3rd party code
 /.github/vale_styles/
+
+# Pipenv
+Pipfile.lock
