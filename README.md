@@ -35,7 +35,7 @@ base-template-cli apply <target repo path> <Base Template repo path>
 
 ## License
 
-[WTFPL](LICENSE)
+[MIT](LICENSE)
 
 ## Contributing
 

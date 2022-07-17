@@ -29,7 +29,7 @@
     "template"
   ],
   "author": "haru",
-  "license": "WTFPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/haru52/base_template_cli/issues"
   },

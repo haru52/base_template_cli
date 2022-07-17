@@ -8,10 +8,10 @@ conventionalcommits
 Dependabot
 gibo
 haru
+MIT
 npm
 repo
 reviewdog
 Secretlint
 UNIX
-WTFPL
 yamllint
