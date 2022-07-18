@@ -27,9 +27,13 @@ make
 
 ## Usage
 
-```sh
-cd path/to/target_repo
-base-template-cli apply <target repo path> <Base Template repo path>
+```console
+Usage: base-template-cli [OPTIONS] DESTINATION_PATH BASE_TEMPLATE_PATH
+
+  Apply Base Template boilerplates to the destination directory.
+
+Options:
+  --help  Show this message and exit.
 ```
 
 ## Versioning
