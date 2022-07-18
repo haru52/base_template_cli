@@ -1,3 +1,5 @@
+#!python
+
 import click
 from applyer import Applyer
 from di_manager import DIManager

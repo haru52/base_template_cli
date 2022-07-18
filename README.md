@@ -12,7 +12,10 @@ Base Template CLI.
 
 ## Requirements
 
-- UNIX/Linux
+| Tool                                     | Version  |
+| ---------------------------------------- | -------- |
+| Python                                   | >=3.10.5 |
+| [click](https://pypi.org/project/click/) | >=8.1.3  |
 
 ## Installation
 
