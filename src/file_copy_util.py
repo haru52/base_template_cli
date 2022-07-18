@@ -1,7 +1,7 @@
 import os
 import shutil
 
-class FileCopyManager:
+class FileCopyUtil:
     def __init__(self, dst_root_path, base_template_root_path):
         self.dst_root_path = dst_root_path
         self.base_template_root_path = base_template_root_path

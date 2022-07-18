@@ -1,6 +1,5 @@
 import os
-import shutil
-import file_copy_manager
+import file_copy_util
 
 TARGET_DIRS_DICT = {
     '': [],
@@ -17,7 +16,7 @@ class Applyer:
     def __init__(self, dst_path, base_template_path):
         self.dst_path = dst_path
         self.base_template_path = base_template_path
-        self.file_copy_manager = file_copy_manager.FileCopyManager(self.dst_path, self.base_template_path)
+        self.file_copy_manager = file_copy_util.FileCopyUtil(self.dst_path, self.base_template_path)
 
 
     def apply(self):
