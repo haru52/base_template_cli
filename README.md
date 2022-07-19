@@ -35,6 +35,8 @@ Usage: base-template-cli [OPTIONS] BASE_TEMPLATE_ROOT_PATH
 Options:
   --version       Show the version and exit.
   -d, --dst TEXT  Destination repo root path.
+  --dirs TEXT     Target directories to copy (e.g., .husky,
+                  .github/ISSUE_TEMPLATE).
   -h, --help      Show this message and exit.
 ```
 
