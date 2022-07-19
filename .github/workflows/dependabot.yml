@@ -22,7 +22,7 @@ jobs:
           # If both this repo's auto-merge setting and its default branch
           # (e.g., main) protection are enabled,
           # you can uncomment the next line.
-          # gh pr merge --auto --merge "$PR_URL"
+          gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -31,12 +31,12 @@ jobs:
       # PR when the dependency updates are neither minor updates nor patch
       # updates, uncomment the following step.
       # CAUTION: The following step may fail if this repo visibility is private.
-      # - name: Request reviews for the PR
-      #   if: >
-      #     steps.metadata.outputs.update-type != 'version-update:semver-minor' &&
-      #     steps.metadata.outputs.update-type != 'version-update:semver-patch'
-      #   run: gh pr edit "$PR_URL" --add-reviewer <login>
-      #   env:
-      #     PR_URL: ${{ github.event.pull_request.html_url }}
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Request reviews for the PR
+        if: >
+          steps.metadata.outputs.update-type != 'version-update:semver-minor' &&
+          steps.metadata.outputs.update-type != 'version-update:semver-patch'
+        run: gh pr edit "$PR_URL" --add-reviewer haru52
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 # yamllint enable rule:comments-indentation rule:line-length
