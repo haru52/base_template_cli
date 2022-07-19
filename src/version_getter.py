@@ -1,6 +1,7 @@
 import json
 import os
 
+
 class VersionGetter:
     @staticmethod
     def get_version():

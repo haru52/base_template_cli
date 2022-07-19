@@ -4,10 +4,12 @@ import click
 from di_manager import DIManager
 import version_getter
 
-context_settings = { 'help_option_names': ['-h', '--help'] }
+context_settings = {'help_option_names': ['-h', '--help']}
+
 
 @click.command(context_settings=context_settings)
-@click.version_option(version=version_getter.VersionGetter.get_version(), prog_name='Base Template CLI')
+@click.version_option(version=version_getter.VersionGetter.get_version(),
+                      prog_name='Base Template CLI')
 @click.option('-d', '--dst', default='.', help='Destination repo root path.')
 @click.argument('base_template_root_path')
 def apply(dst, base_template_root_path):
