@@ -28,13 +28,14 @@ make
 ## Usage
 
 ```console
-Usage: base-template-cli [OPTIONS] DESTINATION_PATH BASE_TEMPLATE_PATH
+Usage: base-template-cli [OPTIONS] BASE_TEMPLATE_ROOT_PATH
 
-  Apply Base Template boilerplates to the destination directory.
+  Apply Base Template boilerplates to the destination repo.
 
 Options:
-  --version  Show the version and exit.
-  --help     Show this message and exit.
+  --version       Show the version and exit.
+  -d, --dst TEXT  Destination repo root path.
+  -h, --help      Show this message and exit.
 ```
 
 ## Update
