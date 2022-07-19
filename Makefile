@@ -1,5 +1,5 @@
-.PHONY: install uninstall dev-install lint lint-npm lint-text lint-yaml lint-sh lint-action
-.PHONY: update-gi
+.PHONY: install uninstall dev-install lint lint-npm lint-text lint-yaml lint-sh lint-action lint-py
+.PHONY: format format-npm format-py update-gi
 
 install:
 	bin/install.sh
@@ -11,7 +11,7 @@ dev-install:
 	npm ci
 	vale sync
 
-lint: lint-npm lint-text lint-yaml lint-sh lint-action
+lint: lint-npm lint-text lint-yaml lint-sh lint-action lint-py
 
 lint-npm:
 	npm run lint
@@ -27,6 +27,17 @@ lint-sh:
 
 lint-action:
 	actionlint
+
+lint-py:
+	pipenv run lint
+
+format: format-npm format-py
+
+format-npm:
+	npm run format
+
+format-py:
+	pipenv run format
 
 update-gi:
 	gibo update

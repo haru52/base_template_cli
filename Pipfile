@@ -13,3 +13,7 @@ flake8-import-order = "*"
 
 [requires]
 python_version = "3.10"
+
+[scripts]
+lint = "flake8 src"
+format = "autopep8 --in-place --aggressive --aggressive --recursive src"
