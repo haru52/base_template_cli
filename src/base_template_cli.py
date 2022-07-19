@@ -1,7 +1,9 @@
 #!python
 
 import click
+
 from di_manager import DIManager
+
 import version_getter
 
 context_settings = {'help_option_names': ['-h', '--help']}
