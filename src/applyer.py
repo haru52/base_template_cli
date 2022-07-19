@@ -1,6 +1,6 @@
 import os
 
-TARGET_DIRS_DICT = {
+DEFAULT_TARGET_DIRS_DICT = {
     '': [],
     '.github': [],
     '.github/ISSUE_TEMPLATE': [],
@@ -13,20 +13,36 @@ TARGET_DIRS_DICT = {
 
 
 class Applyer:
-    def __init__(self, file_copy_util, dst_path, base_template_path):
+    def __init__(
+            self,
+            file_copy_util,
+            dst_path,
+            base_template_path,
+            target_dirs):
         self.file_copy_util = file_copy_util
         self.dst_path = dst_path
         self.base_template_path = base_template_path
+        self.target_dirs = target_dirs
 
     def apply(self):
-        self.__make_target_dirs(self.dst_path)
+        self.target_dirs_dict = self.__select_target_dirs_dict()
+        self.__make_target_dirs()
 
-        for dirs, files in TARGET_DIRS_DICT.items():
+        for dir, files in self.target_dirs_dict.items():
             if len(files) == 0:
-                self.file_copy_util.copy_all_files(dirs)
+                self.file_copy_util.copy_all_files(dir)
             else:
-                self.file_copy_util.copy_files(dirs, files)
+                self.file_copy_util.copy_files(dir, files)
 
-    def __make_target_dirs(self, dst_path):
-        for dirs in TARGET_DIRS_DICT:
-            os.makedirs(os.path.join(dst_path, dirs), exist_ok=True)
+    def __select_target_dirs_dict(self):
+        if len(self.target_dirs) == 0:
+            return DEFAULT_TARGET_DIRS_DICT
+
+        selected_target_dir_tuples = [
+            (d, f) for d, f in DEFAULT_TARGET_DIRS_DICT.items()
+            if d in self.target_dirs]
+        return dict(selected_target_dir_tuples)
+
+    def __make_target_dirs(self):
+        for dirs in self.target_dirs_dict:
+            os.makedirs(os.path.join(self.dst_path, dirs), exist_ok=True)
