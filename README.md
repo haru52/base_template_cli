@@ -8,7 +8,7 @@
 
 ## Overview
 
-CLI tool for [Base Template Repository](https://github.com/haru52/base_template#readme).
+CLI tool of [Base Template Repository](https://github.com/haru52/base_template#readme).
 
 ## Requirements
 
