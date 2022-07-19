@@ -12,15 +12,15 @@ CLI tool of [Base Template Repository](https://github.com/haru52/base_template#r
 
 ## Requirements
 
-| Tool                                     | Version |
-| ---------------------------------------- | ------- |
-| Python                                   | ^3.10.5 |
-| [click](https://pypi.org/project/click/) | ^8.1.3  |
+| Tool                                        | Version |
+| ------------------------------------------- | ------- |
+| Python                                      | ^3.10.5 |
+| [Click](https://click.palletsprojects.com/) | ^8.1.3  |
 
 ## Installation
 
 ```sh
-gh repo clone haru52/base_template_cli # clone this repo
+gh repo clone haru52/base_template_cli # Clone this repo
 cd base_template_cli
 make
 ```
