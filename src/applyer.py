@@ -15,16 +15,19 @@ DEFAULT_TARGET_DIRS_DICT = {
 class Applyer:
     def __init__(
             self,
+            base_template_updater,
             file_copy_util,
             dst_path,
             base_template_path,
             target_dirs):
+        self.base_template_updater = base_template_updater
         self.file_copy_util = file_copy_util
         self.dst_path = dst_path
         self.base_template_path = base_template_path
         self.target_dirs = target_dirs
 
     def apply(self):
+        self.base_template_updater.update()
         self.target_dirs_dict = self.__select_target_dirs_dict()
         self.__make_target_dirs()
 
@@ -33,6 +36,8 @@ class Applyer:
                 self.file_copy_util.copy_all_files(dir)
             else:
                 self.file_copy_util.copy_files(dir, files)
+
+        self.base_template_updater.revert()
 
     def __select_target_dirs_dict(self):
         if len(self.target_dirs) == 0:
