@@ -33,7 +33,24 @@ Usage: base-template-cli [OPTIONS] DESTINATION_PATH BASE_TEMPLATE_PATH
   Apply Base Template boilerplates to the destination directory.
 
 Options:
-  --help  Show this message and exit.
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+```
+
+## Update
+
+```sh
+cd path/to/base_template_cli
+git pull
+```
+
+## Uninstall
+
+```sh
+cd path/to/base_template_cli
+make uninstall
+cd ..
+rm -rf base_template_cli
 ```
 
 ## Versioning
