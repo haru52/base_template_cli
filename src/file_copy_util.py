@@ -8,7 +8,7 @@ class FileCopyUtil:
         self.base_template_root_path = base_template_root_path
 
     def copy_files(self, target_dirs, files):
-        ignore_files = ['.DS_Store']
+        ignore_files = ['.DS_Store', 'CHANGELOG.md']
 
         for file in files:
             if file in ignore_files:
