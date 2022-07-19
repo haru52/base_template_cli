@@ -1,7 +1,11 @@
-.PHONY: install dev-install lint lint-npm lint-text lint-yaml lint-sh lint-action update-gi
+.PHONY: install uninstall dev-install lint lint-npm lint-text lint-yaml lint-sh lint-action
+.PHONY: update-gi
 
 install:
 	bin/install.sh
+
+uninstall:
+	rm -f ~/bin/base-template-cli
 
 dev-install:
 	npm ci
