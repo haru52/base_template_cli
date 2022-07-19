@@ -10,6 +10,7 @@ gibo
 haru
 MIT
 npm
+Pipenv
 repo
 reviewdog
 Secretlint

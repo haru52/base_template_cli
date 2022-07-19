@@ -8,14 +8,14 @@
 
 ## Overview
 
-Base Template CLI.
+CLI tool for [Base Template Repository](https://github.com/haru52/base_template#readme).
 
 ## Requirements
 
-| Tool                                     | Version  |
-| ---------------------------------------- | -------- |
-| Python                                   | >=3.10.5 |
-| [click](https://pypi.org/project/click/) | >=8.1.3  |
+| Tool                                     | Version |
+| ---------------------------------------- | ------- |
+| Python                                   | ^3.10.5 |
+| [click](https://pypi.org/project/click/) | ^8.1.3  |
 
 ## Installation
 
@@ -66,6 +66,7 @@ rm -rf base_template_cli
 [Contributing Guideline](CONTRIBUTING.md)
 
 <!-- vale Microsoft.Vocab = NO -->
+
 ## Author
 <!-- vale Microsoft.Vocab = YES -->
 
