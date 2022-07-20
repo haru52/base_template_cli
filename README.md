@@ -37,13 +37,15 @@ make
 ```console
 Usage: base-template-cli [OPTIONS] BASE_TEMPLATE_ROOT_PATH
 
-  Apply Base Template boilerplates to the destination repo.
+  Apply (Copy) Base Template boilerplates to the destination repo.
 
 Options:
   --version       Show the version and exit.
   -d, --dst TEXT  Destination repo root path.
   --dirs TEXT     Target directories to copy (e.g., .husky,
-                  .github/ISSUE_TEMPLATE).
+                  .github/ISSUE_TEMPLATE). If you don't specify this option,
+                  this command copies all files of Base Template to the
+                  destination repo.
   -h, --help      Show this message and exit.
 ```
 
