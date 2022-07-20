@@ -40,13 +40,16 @@ Usage: base-template-cli [OPTIONS] BASE_TEMPLATE_ROOT_PATH
   Apply (Copy) Base Template boilerplates to the destination repo.
 
 Options:
-  --version       Show the version and exit.
-  -d, --dst TEXT  Destination repo root path.
-  --dirs TEXT     Target directories to copy (e.g., .husky,
-                  .github/ISSUE_TEMPLATE). If you don't specify this option,
-                  this command copies all files of Base Template to the
-                  destination repo.
-  -h, --help      Show this message and exit.
+  --version               Show the version and exit.
+  -d, --dst TEXT          Destination repo root path.
+  -t, --target-dirs TEXT  Target directories to copy (e.g., .husky,
+                          .github/ISSUE_TEMPLATE). If you don't specify this
+                          option, this command copies all files of Base
+                          Template to the destination repo. If you want to
+                          copy only root files, use --only-root option.
+  -r, --only-root         Copy only root directory files of Base Template
+                          repo.
+  -h, --help              Show this message and exit.
 ```
 
 ## Update
