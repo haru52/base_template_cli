@@ -14,6 +14,13 @@ copies all files of Base Template to the destination repo. If you want to \
 copy only root files, use --only-root option."
 
 
+def validate_lang(ctx, param, value):
+    if value not in ('en', 'ja'):
+        raise click.BadParameter('Only `en` or `ja` can be used.')
+
+    return value
+
+
 def validate_options(target_dirs, only_root):
     if len(target_dirs) > 0 and only_root:
         raise click.BadParameter(
@@ -27,8 +34,13 @@ def validate_options(target_dirs, only_root):
 @click.option('-t', '--target-dirs', multiple=True, help=target_dirs_help)
 @click.option('-r', '--only-root', is_flag=True,
               help='Copy only root directory files of Base Template repo.')
+@click.option('-l',
+              '--lang',
+              default='en',
+              help='Language of Base Template. `en` or `ja`.',
+              callback=validate_lang)
 @click.argument('base_template_root_path')
-def apply(dst, target_dirs, only_root, base_template_root_path):
+def apply(dst, target_dirs, only_root, lang, base_template_root_path):
     """Apply (Copy) Base Template boilerplates to the destination repo."""
     validate_options(target_dirs, only_root)
 
@@ -36,7 +48,8 @@ def apply(dst, target_dirs, only_root, base_template_root_path):
         dst,
         base_template_root_path,
         target_dirs,
-        only_root)
+        only_root,
+        lang)
     applyer = di_manager.getInstance('Applyer')
     applyer.apply()
 

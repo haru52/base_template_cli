@@ -11,7 +11,8 @@ class DIManager:
             dst_root_path,
             base_template_root_path,
             target_dirs,
-            only_root):
+            only_root,
+            lang):
         self.BaseTemplateUpdater = base_template_updater.BaseTemplateUpdater(
             base_template_root_path)
         self.FileCopyUtil = file_copy_util.FileCopyUtil(
@@ -22,7 +23,8 @@ class DIManager:
             dst_root_path,
             base_template_root_path,
             target_dirs,
-            only_root)
+            only_root,
+            lang)
 
     def getInstance(self, classname):
         return getattr(self, classname)
