@@ -35,9 +35,9 @@
 ## Installation
 
 ```sh
-gh repo clone <your org>/base_template # Clone the repo
-cd base_template
-make
+gh repo clone <your org>/base_template_cli # Clone the repo
+cd base_template_cli
+make dev-install
 ```
 
 ## Lint
