@@ -10,6 +10,7 @@ uninstall:
 dev-install:
 	npm ci
 	vale sync
+	pipenv install --dev
 
 lint: lint-npm lint-text lint-yaml lint-sh lint-action lint-py
 
