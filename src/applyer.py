@@ -19,14 +19,19 @@ class Applyer:
             file_copy_util,
             dst_path,
             base_template_path,
-            target_dirs):
+            target_dirs,
+            only_root):
         self.base_template_updater = base_template_updater
         self.file_copy_util = file_copy_util
         self.dst_path = dst_path
         self.base_template_path = base_template_path
         self.target_dirs = target_dirs
+        self.only_root = only_root
 
     def apply(self):
+        if self.only_root:
+            self.target_dirs = '',
+
         self.base_template_updater.update()
         self.target_dirs_dict = self.__select_target_dirs_dict()
         self.__make_target_dirs()
