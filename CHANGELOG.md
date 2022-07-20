@@ -1,3 +1,10 @@
+## [2.1.0](https://github.com/haru52/base_template_cli/compare/v2.0.0...v2.1.0) (2022-07-20)
+
+
+### Features
+
+* add --lang (-l) option ([7c813ba](https://github.com/haru52/base_template_cli/commit/7c813baf76dd86c7188495c99ff78344c487d7e4))
+
 ## [2.0.0](https://github.com/haru52/base_template_cli/compare/v1.0.0...v2.0.0) (2022-07-20)
 
 
