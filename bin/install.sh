@@ -8,11 +8,11 @@ mkdir -p "$bin_path"
 ln -sfv "$src_path"/base_template_cli.py "$bin_path"/base-template-cli
 
 if [ "$PATH" = "$bin_path" ] || [ "$PATH" = "${bin_path}/" ]; then
-  exit 0
+  exit
 fi
 
 if echo "$PATH" | grep -q -e "${bin_path}:" -e "${bin_path}/:" -e ":${bin_path}"; then
-  exit 0
+  exit
 fi
 
 shell_name=$(basename "$SHELL")
@@ -24,7 +24,7 @@ case $shell_name in
     printf "Run the following command:\n\n"
     # shellcheck disable=SC2016
     echo 'echo "export PATH=\"\${HOME}/bin:\${PATH}\"" >> <your shell rc file path (e.g., ~/.bashrc)>'
-    exit 0
+    exit
     ;;
 esac
 
