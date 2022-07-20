@@ -12,10 +12,17 @@ CLI tool of [Base Template Repository](https://github.com/haru52/base_template#r
 
 ## Requirements
 
-| Tool                                        | Version |
-| ------------------------------------------- | ------- |
-| Python                                      | ^3.10.5 |
-| [Click](https://click.palletsprojects.com/) | ^8.1.3  |
+| Tool                                                                | Version |
+| ------------------------------------------------------------------- | ------- |
+| Python                                                              | ^3.10.5 |
+| [Click](https://click.palletsprojects.com/)                         | ^8.1.3  |
+| [Base Template Repository](https://github.com/haru52/base_template) | ^2.2.0  |
+
+You have to clone `base_template` repo to your machine before using Base Template CLI.
+
+```sh
+gh repo clone haru52/base_template # Clone base_template repo
+```
 
 ## Installation
 
