@@ -49,6 +49,7 @@ Options:
                           copy only root files, use --only-root option.
   -r, --only-root         Copy only root directory files of Base Template
                           repo.
+  -l, --lang TEXT         Language of Base Template. `en` or `ja`.
   -h, --help              Show this message and exit.
 ```
 
