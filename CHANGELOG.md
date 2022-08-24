@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/haru52/base_template_cli/compare/v2.1.0...v2.1.1) (2022-08-24)
+
+
+### Bug Fixes
+
+* delete unnecessary foo.sh ([3361f3b](https://github.com/haru52/base_template_cli/commit/3361f3bff4855bd9ffee2791b78f021b2aba78ca))
+
 ## [2.1.0](https://github.com/haru52/base_template_cli/compare/v2.0.0...v2.1.0) (2022-07-20)
 
 
