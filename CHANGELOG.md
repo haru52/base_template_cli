@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/haru52/base_template_cli/compare/v2.1.1...v2.1.2) (2022-12-29)
+
+
+### Bug Fixes
+
+* bump json5 from 2.2.1 to 2.2.2 ([3970fdb](https://github.com/haru52/base_template_cli/commit/3970fdb4e5cfcf5ec89eaba73d586cef99b2e037))
+
 ## [2.1.1](https://github.com/haru52/base_template_cli/compare/v2.1.0...v2.1.1) (2022-08-24)
 
 
