@@ -4,16 +4,16 @@
 
 ## Requirements
 
-| Tool                                                        | Version                                          |
-| ----------------------------------------------------------- | ------------------------------------------------ |
-| Node.js and npm                                             | `engines` values in [package.json](package.json) |
-| [gibo](https://github.com/simonwhitaker/gibo#readme)        | ^2.2.8                                           |
-| [Vale CLI](https://vale.sh/)                                | ^2.21.3                                          |
-| [yamllint](https://yamllint.readthedocs.io/)                | ^1.28.0                                          |
-| [ShellCheck](https://github.com/koalaman/shellcheck#readme) | >=0.9.0, <1.0.0                                  |
-| [actionlint](https://github.com/rhysd/actionlint#readme)    | [.tool-versions](.tool-versions)                 |
-| Python                                                      | [.tool-versions](.tool-versions)                 |
-| [Pipenv](https://pipenv.pypa.io/)                           | >=2022.12.19                                     |
+| Tool                                                        | Version                                                                                |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Node.js and npm                                             | `engines` values in [package.json](package.json)                                       |
+| [gibo](https://github.com/simonwhitaker/gibo#readme)        | ^2.2.8                                                                                 |
+| [Vale CLI](https://vale.sh/)                                | ^2.21.3                                                                                |
+| [yamllint](https://yamllint.readthedocs.io/)                | ^1.28.0                                                                                |
+| [ShellCheck](https://github.com/koalaman/shellcheck#readme) | >=0.9.0, <1.0.0                                                                        |
+| [actionlint](https://github.com/rhysd/actionlint#readme)    | [.tool-versions](https://github.com/haru52/base_template_cli/blob/main/.tool-versions) |
+| Python                                                      | [.tool-versions](https://github.com/haru52/base_template_cli/blob/main/.tool-versions) |
+| [Pipenv](https://pipenv.pypa.io/)                           | >=2022.12.19                                                                           |
 
 ## Rules
 

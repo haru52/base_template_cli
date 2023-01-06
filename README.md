@@ -81,7 +81,7 @@ rm -rf base_template_cli
 
 ## Contributing
 
-[Contributing Guideline](CONTRIBUTING.md)
+[Contributing Guideline](docs/CONTRIBUTING.md)
 
 <!-- vale Microsoft.Vocab = NO -->
 
