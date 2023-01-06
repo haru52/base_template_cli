@@ -14,7 +14,7 @@ CLI tool of [Base Template Repository](https://github.com/haru52/base_template#r
 
 | Tool                                                                                                                                      | Version               |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| Python                                                                                                                                    | ^3.10.5               |
+| Python                                                                                                                                    | ^3.11.1               |
 | [Click](https://click.palletsprojects.com/)                                                                                               | ^8.1.3                |
 | [Base Template Repository](https://github.com/haru52/base_template) or its [Japanese version](https://github.com/haru52/base_template_ja) | ^7.4.0 or ^6.4.0 (ja) |
 
