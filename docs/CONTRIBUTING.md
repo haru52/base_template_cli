@@ -35,7 +35,7 @@
 ## Installation
 
 ```sh
-gh repo clone <your org>/base_template_cli # Clone the repo
+git clone git@github.com:<your org>/base_template_cli.git
 cd base_template_cli
 make dev-install
 ```

@@ -21,15 +21,15 @@ CLI tool of [Base Template Repository](https://github.com/haru52/base_template#r
 You have to clone either `base_template` or `base_template_ja` repo to your machine before using Base Template CLI.
 
 ```sh
-gh repo clone haru52/base_template # Clone base_template repo
+git clone git@github.com:haru52/base_template.git
 # or
-gh repo clone haru52/base_template_ja
+git clone git@github.com:haru52/base_template_ja.git
 ```
 
 ## Installation
 
 ```sh
-gh repo clone haru52/base_template_cli # Clone this repo
+git clone git@github.com:haru52/base_template_cli.git
 cd base_template_cli
 make
 ```
