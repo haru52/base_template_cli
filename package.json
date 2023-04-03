@@ -4,8 +4,8 @@
   "description": "CLI tool of Base Template Repository.",
   "private": true,
   "engines": {
-    "node": "^18.12.1",
-    "npm": "^8.19.2"
+    "node": "^18.15.0",
+    "npm": "^9.6.3"
   },
   "scripts": {
     "lint": "run-s --continue-on-error lint:*",
