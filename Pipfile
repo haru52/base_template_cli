@@ -4,12 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-click = "*"
+click = "~=8.1"
 
 [dev-packages]
-autopep8 = "*"
-flake8 = "*"
-flake8-import-order = "*"
+autopep8 = "~=2.0"
+flake8 = "~=6.0"
+flake8-import-order = "~=0.18"
 
 [requires]
 python_version = "3.11"
