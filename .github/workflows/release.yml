@@ -25,8 +25,15 @@ jobs:
         with:
           node-version-file: .node-version
           cache: npm
+      - uses: actions/setup-python@v4
+        with:
+          cache: pipenv
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci
+          python -m pip install --upgrade pip
+          python -m pip install pipenv
+          python -m pipenv sync
       - name: Release
         env:
           # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -36,4 +43,8 @@ jobs:
           # `GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}`
           # and uncomment the next line.
           GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+
+          # If this is an npm package project, uncomment the next line.
+          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
         run: npx semantic-release
