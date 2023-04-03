@@ -1,7 +1,6 @@
 import click
 
 from .di_manager import DIManager
-
 from .version_getter import VersionGetter
 
 

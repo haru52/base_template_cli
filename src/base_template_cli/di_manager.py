@@ -1,7 +1,5 @@
 from .applyer import Applyer
-
 from .base_template_updater import BaseTemplateUpdater
-
 from .file_copy_util import FileCopyUtil
 
 
