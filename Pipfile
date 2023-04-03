@@ -7,12 +7,13 @@ name = "pypi"
 click = "*"
 
 [dev-packages]
-flake8 = "*"
 autopep8 = "*"
+flake8 = "*"
 flake8-import-order = "*"
 
 [requires]
 python_version = "3.11"
+python_full_version = "3.11.2"
 
 [scripts]
 lint = "flake8 src"
