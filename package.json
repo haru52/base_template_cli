@@ -1,6 +1,6 @@
 {
   "name": "base-template-cli",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "CLI tool of Base Template Repository.",
   "private": true,
   "engines": {

@@ -1,3 +1,10 @@
+## [2.2.0](https://github.com/haru52/base_template_cli/compare/v2.1.2...v2.2.0) (2023-04-04)
+
+
+### Features
+
+* change the option order in help ([2805898](https://github.com/haru52/base_template_cli/commit/280589817671d64f5ee387eb55ca4fd225dadc15))
+
 ## [2.1.2](https://github.com/haru52/base_template_cli/compare/v2.1.1...v2.1.2) (2022-12-29)
 
 
