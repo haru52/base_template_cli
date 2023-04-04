@@ -2,6 +2,7 @@
 
 [![Test](https://github.com/haru52/base_template_cli/actions/workflows/test.yml/badge.svg)](https://github.com/haru52/base_template_cli/actions/workflows/test.yml)
 [![Release](https://github.com/haru52/base_template_cli/actions/workflows/release.yml/badge.svg)](https://github.com/haru52/base_template_cli/actions/workflows/release.yml)
+[![CodeQL](https://github.com/haru52/base_template_cli/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/haru52/base_template_cli/actions/workflows/github-code-scanning/codeql)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://commitizen.github.io/cz-cli/)
 [![semantic-release: conventionalcommits](https://img.shields.io/badge/semantic--release-conventionalcommits-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
@@ -14,9 +15,7 @@ CLI tool of [Base Template Repository](https://github.com/haru52/base_template#r
 
 | Tool                                                                                                                                      | Version               |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| Python                                                                                                                                    | ^3.11.1               |
-| [Click](https://click.palletsprojects.com/)                                                                                               | ^8.1.3                |
-| [Base Template Repository](https://github.com/haru52/base_template) or its [Japanese version](https://github.com/haru52/base_template_ja) | ^7.4.0 or ^6.4.0 (ja) |
+| [Base Template Repository](https://github.com/haru52/base_template) or its [Japanese version](https://github.com/haru52/base_template_ja) | ^7.8.0 or ^6.8.0 (ja) |
 
 You have to clone either `base_template` or `base_template_ja` repo to your machine before using Base Template CLI.
 
@@ -29,9 +28,7 @@ git clone git@github.com:haru52/base_template_ja.git
 ## Installation
 
 ```sh
-git clone git@github.com:haru52/base_template_cli.git
-cd base_template_cli
-make
+pip install base-template-cli
 ```
 
 ## Usage
@@ -58,17 +55,13 @@ Options:
 ## Update
 
 ```sh
-cd path/to/base_template_cli
-git pull
+pip install -U base-template-cli
 ```
 
 ## Uninstall
 
 ```sh
-cd path/to/base_template_cli
-make uninstall
-cd ..
-rm -rf base_template_cli
+pip uninstall base-template-cli
 ```
 
 ## Versioning
@@ -77,13 +70,17 @@ rm -rf base_template_cli
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/haru52/base_template_cli/blob/main/LICENSE)
 
 ## Contributing
 
-[Contributing Guideline](docs/CONTRIBUTING.md)
+[Contributing Guideline](https://haru52.github.io/base_template_cli/CONTRIBUTING.html)
 
 <!-- vale Microsoft.Vocab = NO -->
+
+## Documentation
+
+[Documentation | base_template_cli](https://haru52.github.io/base_template_cli/)
 
 ## Author
 <!-- vale Microsoft.Vocab = YES -->
