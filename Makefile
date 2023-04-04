@@ -1,11 +1,4 @@
-.PHONY: install uninstall dev-install lint lint-npm lint-text lint-yaml lint-sh lint-action lint-py
-.PHONY: format format-npm format-py update-gi
-
-install:
-	bin/install.sh
-
-uninstall:
-	rm -f ~/bin/base-template-cli
+.PHONY: dev-install lint lint-npm lint-text lint-yaml lint-sh lint-action lint-py update-gi
 
 dev-install:
 	npm ci
@@ -31,14 +24,6 @@ lint-action:
 
 lint-py:
 	pipenv run lint
-
-format: format-npm format-py
-
-format-npm:
-	npm run format
-
-format-py:
-	pipenv run format
 
 update-gi:
 	gibo update

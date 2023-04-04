@@ -1,8 +1,6 @@
-import applyer
-
-import base_template_updater
-
-import file_copy_util
+from .applyer import Applyer
+from .base_template_updater import BaseTemplateUpdater
+from .file_copy_util import FileCopyUtil
 
 
 class DIManager:
@@ -13,11 +11,11 @@ class DIManager:
             target_dirs,
             only_root,
             lang):
-        self.BaseTemplateUpdater = base_template_updater.BaseTemplateUpdater(
+        self.BaseTemplateUpdater = BaseTemplateUpdater(
             base_template_root_path)
-        self.FileCopyUtil = file_copy_util.FileCopyUtil(
+        self.FileCopyUtil = FileCopyUtil(
             dst_root_path, base_template_root_path)
-        self.Applyer = applyer.Applyer(
+        self.Applyer = Applyer(
             self.BaseTemplateUpdater,
             self.FileCopyUtil,
             dst_root_path,

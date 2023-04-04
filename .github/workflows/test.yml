@@ -16,7 +16,14 @@ jobs:
         with:
           node-version-file: .node-version
           cache: npm
-      - run: npm ci
+      - uses: actions/setup-python@v4
+        with:
+          cache: pipenv
+      - run: |
+          npm ci
+          python -m pip install --upgrade pip
+          python -m pip install pipenv
+          python -m pipenv sync --dev
       - name: "Lint: credentials"
         run: npx secretlint "**/*"
       - name: "Lint: text (prose)"
@@ -54,3 +61,35 @@ jobs:
           ./actionlint -color
         # yamllint enable rule:line-length
         shell: bash
+      - name: "Lint: Python"
+        run: python -m pipenv run lint
+# yamllint disable rule:comments-indentation
+  # If this is an npm project and package.json has build or test script,
+  # uncomment the following jobs.
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          cache: pipenv
+      - run: |
+          python -m pip install --upgrade pip
+          python -m pip install pipenv
+          python -m pipenv sync --dev
+      - run: bin/build.sh
+  # test:
+  #   name: Test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-python@v4
+  #       with:
+  #         cache: pipenv
+  #     - run: |
+  #         python -m pip install --upgrade pip
+  #         python -m pip install pipenv
+  #         python -m pipenv sync --dev
+  #     - run: python -m pipenv test
+# yamllint enable rule:comments-indentation

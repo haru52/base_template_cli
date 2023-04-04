@@ -22,12 +22,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haru52/base_template_cli.git"
+    "url": "https://github.com/haru52/base_template_cli.git"
   },
   "keywords": [
-    "template"
+    "base-template",
+    "template",
+    "cli"
   ],
-  "author": "haru",
+  "author": {
+    "name": "haru",
+    "url": "https://haru52.com/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/haru52/base_template_cli/issues"
@@ -39,6 +44,7 @@
     "@commitlint/cz-commitlint": "^17.5.0",
     "@secretlint/secretlint-rule-preset-recommend": "^6.2.3",
     "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "commitizen": "^4.3.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",

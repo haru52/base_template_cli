@@ -28,5 +28,8 @@ plugins:
         - package.json
         - package-lock.json
         - npm-shrinkwrap.json
+  -
+    - "@semantic-release/exec"
+    - publishCmd: "bin/build.sh && bin/publish.sh"
   - "@semantic-release/github"
 preset: conventionalcommits
