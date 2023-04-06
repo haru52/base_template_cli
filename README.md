@@ -77,7 +77,7 @@ pip install -U base-template-cli
 pip uninstall base-template-cli
 ```
 
-## Versioning
+## Versioning policy
 
 [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
 
