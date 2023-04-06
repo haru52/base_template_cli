@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/haru52/base_template_cli/compare/v2.2.0...v3.0.0) (2023-04-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* change to use subcommands
+
+### Features
+
+* change to use subcommands ([617e424](https://github.com/haru52/base_template_cli/commit/617e424053cc7290cf2888df0c11a44ef9823e16))
+
 ## [2.2.0](https://github.com/haru52/base_template_cli/compare/v2.1.2...v2.2.0) (2023-04-04)
 
 
