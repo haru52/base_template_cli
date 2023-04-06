@@ -34,7 +34,21 @@ pip install base-template-cli
 ## Usage
 
 ```console
-Usage: base-template-cli [OPTIONS] BASE_TEMPLATE_ROOT_PATH
+Usage: base-template-cli [OPTIONS] COMMAND [ARGS]...
+
+  Base Template CLI.
+
+Options:
+  --version   Show the version and exit.
+  -h, --help  Show this message and exit.
+
+Commands:
+  apply  Apply (Copy) Base Template boilerplates to the destination repo.
+```
+
+```console
+Usage: base-template-cli apply [OPTIONS]
+                         BASE_TEMPLATE_ROOT_PATH
 
   Apply (Copy) Base Template boilerplates to the destination repo.
 
@@ -48,7 +62,6 @@ Options:
   -r, --only-root         Copy only root directory files of Base Template
                           repo.
   -l, --lang TEXT         Language of Base Template. `en` or `ja`.
-  --version               Show the version and exit.
   -h, --help              Show this message and exit.
 ```
 
