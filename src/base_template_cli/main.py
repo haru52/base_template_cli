@@ -57,5 +57,9 @@ def apply(dst, target_dirs, only_root, lang, base_template_root_path):
     applyer.apply()
 
 
-if __name__ == '__main__':
+def main():
     cli()
+
+
+if __name__ == '__main__':
+    main()
