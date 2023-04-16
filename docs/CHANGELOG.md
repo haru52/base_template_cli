@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/haru52/base_template_cli/compare/v3.0.0...v3.0.1) (2023-04-16)
+
+
+### Bug Fixes
+
+* fix CLI to work correctly ([3c09951](https://github.com/haru52/base_template_cli/commit/3c099519b8f89412c7f307749a74238b18482621))
+
 ## [3.0.0](https://github.com/haru52/base_template_cli/compare/v2.2.0...v3.0.0) (2023-04-06)
 
 
