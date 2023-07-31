@@ -42,7 +42,7 @@
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.7",
     "@commitlint/cz-commitlint": "^17.5.0",
-    "@secretlint/secretlint-rule-preset-recommend": "^6.2.3",
+    "@secretlint/secretlint-rule-preset-recommend": "^7.0.3",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
