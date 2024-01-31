@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/haru52/base_template_cli/compare/v3.0.1...v3.0.2) (2024-01-31)
+
+
+### Bug Fixes
+
+* bump yaml from 2.2.1 to 2.2.2 ([ca6770e](https://github.com/haru52/base_template_cli/commit/ca6770eea31844ef8930a16c0c9646f560e63b5a))
+
 ## [3.0.1](https://github.com/haru52/base_template_cli/compare/v3.0.0...v3.0.1) (2023-04-16)
 
 
